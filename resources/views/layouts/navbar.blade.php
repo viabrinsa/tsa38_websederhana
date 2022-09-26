@@ -2,8 +2,7 @@
   <section id="topbar" class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
-              <i class="bi bi-envelope d-flex align-items-center"><a
-                      href="mailto:contact@example.com">movieku@gmail.com</a></i>
+              <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">movieku@gmail.com</a></i>
               <i class="bi bi-phone d-flex align-items-center ms-4"><span>081 888 999 000</span></i>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
@@ -28,8 +27,7 @@
                   <li><a href="/home">BERANDA</a></li>
                   <li><a href="/tentang">TENTANG KAMI</a></li>
                   <li><a href="/artikel">ARTIKEL</a></li>
-                  <li class="dropdown"><a href="#"><span>KATEGORI</span> <i
-                              class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <li class="dropdown"><a href="#"><span>KATEGORI</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                       <ul>
                           <li><a href="#">ACTION</a></li>
                           <li><a href="/comedy">COMEDY</a></li>

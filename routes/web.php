@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 
@@ -24,3 +25,6 @@ Route::get('/artikel', [PageController::class, 'artikel']);
 Route::get('/kontak', [PageController::class, 'kontak']);
 Route::get('/romance', [PageController::class, 'kategori']);
 Route::get('/comedy', [PageController::class, 'kategori2']);
+
+Route::get('/index', [AdminController::class, 'index']);
+Route::get('/film', [AdminController::class, 'dataFilm']);
