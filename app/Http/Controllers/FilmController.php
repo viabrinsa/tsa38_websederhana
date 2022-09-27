@@ -4,26 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class FilmController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function tampilfilm()
     {
-        return view('layoutadmin/index');
-    }
-
-    public function dataFilm()
-    {
-        return view('layoutadmin/film');
-    }
-
-    public function berandaadmin()
-    {
-        return view('admin/berandaadmin');
+        return view('film/tampilfilm');
     }
 
 
@@ -32,9 +22,9 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createfilm()
     {
-        //
+        return view('film/tambahfilm');
     }
 
     /**
@@ -65,9 +55,9 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editfilm()
     {
-        //
+        return view('film/editfilm');
     }
 
     /**
