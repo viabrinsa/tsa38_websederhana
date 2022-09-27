@@ -28,8 +28,10 @@
                             </thead>
                             @foreach($data as $daftar)
                             <tr>
-                                <td>{{$daftar->nama}}</td>
+                                <td>{{$daftar->judulfilm}}</td>
                                 <td>{{$daftar->deskripsi}}</td>
+                                <td>{{$daftar->genre}}</td>
+                                <td>{{asset($daftar->poster)}}</td>
                                 <!-- <td><img class="img-preview img-fluid" src="{{ url('/produk/'.$daftar->gambar) }}" style="max-width: 100px;"></td> -->
                             </tr>
                             @endforeach

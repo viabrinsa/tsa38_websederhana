@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Film;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -18,7 +19,8 @@ class AdminController extends Controller
 
     public function dataFilm()
     {
-        return view('layoutadmin/film');
+        $data = Film::all();
+        return view('film/tampilfilm', ['data' => $data]);
     }
 
     public function berandaadmin()
