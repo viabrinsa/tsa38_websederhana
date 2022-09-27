@@ -39,3 +39,11 @@ Route::get('/berandaadmin', [AdminController::class, 'berandaadmin']);
 Route::get('/tampilfilm', [FilmController::class, 'tampilfilm']);
 Route::get('/tambahfilm', [FilmController::class, 'createfilm']);
 Route::get('/editfilm', [FilmController::class, 'editfilm']);
+
+//artikel
+Route::get('/tampilart', [ArtikelController::class, 'index']);
+Route::get('/createart', [ArtikelController::class, 'create'])->name("createart");
+Route::post('/tambahart', [ArtikelController::class, 'store'])->name("tambahart");
+Route::get('/editart/{id?}', [ArtikelController::class, 'edit'])->name("editart");
+Route::post('/editart/{id}', [ArtikelController::class, 'update']);
+Route::post('/destroy/{id}', [ArtikelController::class, 'destroy']);

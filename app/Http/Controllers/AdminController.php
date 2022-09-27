@@ -21,6 +21,11 @@ class AdminController extends Controller
         return view('layoutadmin/film');
     }
 
+    public function dataArtikel()
+    {
+        return view('artikel/tampilart');
+    }
+
     public function berandaadmin()
     {
         return view('admin/berandaadmin');
