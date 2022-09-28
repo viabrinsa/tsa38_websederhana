@@ -9,6 +9,7 @@
   <!-- /.card-header -->
   <div class="card-body">
     <a href="/tambahfilm" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
+    <a href="/film/cetak_pdf" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Cetak</a>
     <hr>
     <table id="example1" class="table table-bordered table-striped">
       <thead>

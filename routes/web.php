@@ -42,3 +42,4 @@ Route::post('/tambahfilm', [FilmController::class, 'storefilm'])->name("tambahfi
 Route::get('/editfilm/{id?}', [FilmController::class, 'editfilm'])->name("editfilm");
 Route::post('/editfilm/{id}', [FilmController::class, 'updatefilm']);
 Route::post('/destroy/{id}', [FilmController::class, 'destroy']);
+Route::get('film/cetak_pdf', [FilmController::class, 'cetak_pdf']);

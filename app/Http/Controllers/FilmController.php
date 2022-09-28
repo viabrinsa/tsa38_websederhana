@@ -169,6 +169,6 @@ class FilmController extends Controller
     public function cetak_pdf()
     {
         $data = Film::all();
-        return view('cetak_pdf', compact('data'));
+        return view('film/cetak_pdf', compact('data'));
     }
 }
