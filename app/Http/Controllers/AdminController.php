@@ -23,6 +23,11 @@ class AdminController extends Controller
         return view('film/tampilfilm', ['data' => $data]);
     }
 
+    public function dataArtikel()
+    {
+        return view('artikel/tampilart');
+    }
+
     public function berandaadmin()
     {
         return view('admin/berandaadmin');

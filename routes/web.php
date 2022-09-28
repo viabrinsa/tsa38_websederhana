@@ -42,4 +42,15 @@ Route::post('/tambahfilm', [FilmController::class, 'storefilm'])->name("tambahfi
 Route::get('/editfilm/{id?}', [FilmController::class, 'editfilm'])->name("editfilm");
 Route::post('/editfilm/{id}', [FilmController::class, 'updatefilm']);
 Route::post('/destroy/{id}', [FilmController::class, 'destroy']);
+<<<<<<< HEAD
 Route::get('film/cetak_pdf', [FilmController::class, 'cetak_pdf']);
+=======
+
+//artikel
+Route::get('/tampilart', [ArtikelController::class, 'index']);
+Route::get('/createart', [ArtikelController::class, 'create'])->name("createart");
+Route::post('/tambahart', [ArtikelController::class, 'store'])->name("tambahart");
+Route::get('/editart/{id?}', [ArtikelController::class, 'edit'])->name("editart");
+Route::post('/editart/{id}', [ArtikelController::class, 'update']);
+Route::post('/destroy/{id}', [ArtikelController::class, 'destroy']);
+>>>>>>> 312f9a61c284a12f0aea84e8064521b1cc79dfd4

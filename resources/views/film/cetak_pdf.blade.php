@@ -52,6 +52,7 @@
                 <td>{{$list->genre}}</td>
                 <td><img class="img-preview img-fluid" src="{{ asset('storage/'.$list->poster) }}" style="max-width: 100px;"></td>
             </tr>
+
             @endforeach
         </table>
     </div>
